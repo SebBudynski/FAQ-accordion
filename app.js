@@ -1,27 +1,17 @@
 "use strict";
 
 
+const acc = document.getElementsByClassName("question");
 
-const one = document.querySelector(".one");
-const two = document.querySelector(".two");
-const three = document.querySelector(".three");
-const four = document.querySelector(".four");
+let i;
 
-
-one.addEventListener("click", () => {
-  this.classList.toggle("hidden");
-});
-two.addEventListener("click", () => {
-  document.querySelector(".paragraph-2").classList.toggle("hidden");
-  ;
-});
-three.addEventListener("click", () => {
-  document.querySelector(".paragraph-3").classList.toggle("hidden");
-  ;
-});
-four.addEventListener("click", () => {
-  document.querySelector(".paragraph-4").classList.toggle("hidden");
-  ;
-});
-
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    let hidden = this.nextElementSibling;
+    if (hidden.style.display === "block") {
+      hidden.style.display = "none";
+    } else {
+      hidden.style.display = "block";
+    }
+  });
+}
