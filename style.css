@@ -14,6 +14,7 @@ body {
   background-image: url(assets/images/background-pattern-desktop.svg);
   background-color: var(--Light-pink);
   background-repeat: no-repeat;
+  background-size: 100%;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
   display: flex;
@@ -26,33 +27,45 @@ body {
   background-color: white;
   border-radius: 0.6rem;
   padding: 1.5rem;
+  margin: 1rem;
 }
 
-.title{
-    font-size: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    padding-bottom: 2rem;
+.title {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 
-.question{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.question :hover {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.questions {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px hsl(292, 16%, 49%, 0.1);
 }
 
 h2 {
   font-size: 1.125rem;
 }
 
-.question :hover{
-    color: var(--purple);
-    cursor:pointer;
-}
 
 p {
   color: var(--Grayish-purple);
-  margin: 1rem 0;
-  padding-bottom: 1rem;
-  border-bottom: solid 1px hsl(292, 16%, 49%, 0.1);
+  padding:  1rem 0 ;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
 }
