@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 3rem;
   display: flex;
   gap: 1rem;
   padding-bottom: 2rem;
@@ -42,6 +42,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  border: none;
+  background: transparent;
+  width: 100%;
 }
 
 .question :hover {
@@ -49,10 +52,16 @@ body {
   cursor: pointer;
 }
 
-.questions {
+.topic {
   margin: 1rem 0;
   padding-bottom: 1rem;
   border-bottom: solid 1px hsl(292, 16%, 49%, 0.1);
+}
+
+.topic:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 h2 {
