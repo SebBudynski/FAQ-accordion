@@ -16,18 +16,18 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: "Work Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   margin: auto;
-  max-width: 35rem;
+  max-width: 38rem;
 }
 
 .content {
   background-color: white;
+  margin: 1rem;
   border-radius: 0.6rem;
   padding: 1.5rem;
-  margin: 1rem;
 }
 
 .title {
@@ -59,13 +59,17 @@ h2 {
   font-size: 1.125rem;
 }
 
-
 p {
   color: var(--Grayish-purple);
-  padding:  1rem 0 ;
-}
-
-.hidden {
+  padding: 1rem 0;
   display: none;
   overflow: hidden;
+}
+
+.question:after {
+  content: url(assets/images/icon-plus.svg);
+}
+
+.active:after {
+  content: url(assets/images/icon-minus.svg);
 }
