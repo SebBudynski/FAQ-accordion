@@ -82,5 +82,5 @@ body {
 
 .answer:hover {
   cursor: default;
+  color: var(--Grayish-purple);
 }
-
