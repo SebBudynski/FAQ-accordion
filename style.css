@@ -34,6 +34,7 @@ main {
   border-radius: 0.6rem;
   padding: 1.5rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -76,6 +77,11 @@ main {
   content: url(assets/images/icon-plus.svg);
 }
 
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
 .active:after {
   content: url(assets/images/icon-minus.svg);
 }
@@ -83,8 +89,8 @@ main {
 .answer {
   color: var(--Grayish-purple);
   padding: 1rem 0;
-  display: none;
-  overflow: hidden;
+  /* display: none;
+  overflow: hidden; */
 }
 
 .answer:hover {
