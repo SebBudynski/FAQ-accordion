@@ -12,10 +12,6 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     let hidden = this.nextElementSibling;
-    if (hidden.style.display === "flex") {
-      hidden.style.display = "none";
-    } else {
-      hidden.style.display = "flex";
-    }
+    hidden.classList.toggle("hidden");
   });
 }
